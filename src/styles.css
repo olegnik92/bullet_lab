@@ -1,0 +1,44 @@
+
+
+.control-panel {
+    top: 10px;
+    right: 10px;
+}
+
+.panel {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid gray;
+    padding: 10px;
+    overflow: hidden;  
+    background-color: #cccccc;
+}
+
+.panel .header {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.panel[data-collapsed="true"] {
+    max-height: 40px;
+}
+
+.panel .togled::before {
+    content: '▼';
+    margin-right: 6px;
+}
+
+.panel[data-collapsed="true"] .togled::before {
+    content: '►';
+}
+
+.item {
+    padding-bottom: 4px;
+    padding-top: 4px;
+    font-size: 16px;
+    margin-left: 22px;
+}
+
+.button {
+    width: 100%;
+}
